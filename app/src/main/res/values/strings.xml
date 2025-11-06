@@ -2,5 +2,6 @@
     <string name="app_name">activity5</string>
     <string name="submit">Submit</string>
     <string name="back">Back</string>
-    <string name=""
+    <string name="nama_lengkap">Nama Lengkap</string>
+
 </resources>

@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.activity5.view.FormIsian
 
 enum class Navigasi{
     Formulirku,
@@ -41,4 +42,15 @@ fun DataApp(
         }
     }
 }
+
+private fun cancelAndBackToFormulirku(navController: NavHostController) {
+    navController.popBackStack(Navigasi.Formulirku,name,
+        inlcusive = false)
+}
+
+@Composable
+fun TampilData(onBlackBtnClick: () -> cancelAndBackToFormulirku) {
+    TODO("Not yet implemented")
+}
+
 

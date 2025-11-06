@@ -31,7 +31,14 @@ fun DataApp(
                     }
                 )
             }
+            composable (route = Navigasi.Detail.name){
+                TampilData(
+                    onBlackBtnClick = {
+                        cancelAndBackToFormulirku(navController)
+                    }
+                )
+            }
         }
-
     }
 }
+
